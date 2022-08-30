@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  background-color: #077186;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.todoapp-container {
+  width: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+h1 {
+  color: #237c83;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.input-section {
+  background-color: #056679;
+  padding: 18px;
+  border-radius: 5px;
+  box-shadow: 0 4px rgba(0, 0, 0, 0.651);
+}
+
+.input-section input {
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid rgb(180, 180, 180);
+  outline: #818181;
+  color: #26757a;
+}
+
+input::placeholder {
+  color: 26757a;
+}
+
+ul {
+  text-align: left;
+  padding: 0;
+}
+ul li {
+  color: #399399;
+  list-style: none;
+  background-color: #056679;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  box-shadow: 0 4px rgba(0, 0, 0, 0.651);
+}
+
+ul li i {
+  text-align: right;
+  flex: 1;
+}
