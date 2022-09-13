@@ -51,12 +51,17 @@ ul li {
   margin-bottom: 10px;
   border-radius: 5px;
   padding: 10px;
-  display: flex;
   box-shadow: 0 7px 6px rgba(0, 0, 0, 0.651);
+  display: flex;
 }
 
 ul li i {
+padding-left: 5px;
+padding-right: 5px;
+  cursor: pointer;
+}
+
+.icon {
   text-align: right;
   flex: 1;
-  cursor: pointer;
 }
