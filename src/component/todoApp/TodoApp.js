@@ -29,6 +29,16 @@ export class TodoApp extends Component {
     });
   };
 
+  // editItem = (event) => {
+  //   event.preventDefault();
+  //   const { input } = this.state;
+
+  //   this.setState({
+  //     items: [...this.state.items, input],
+  //     input: '',
+  //   });
+  // };
+
   render() {
     const { input, items } = this.state;
 
@@ -46,11 +56,17 @@ export class TodoApp extends Component {
         <ul>
           {items.map((data, index) => (
             <li key={index}>
-              {data}{' '}
-              <i
-                className='fas fa-trash-alt'
-                onClick={() => this.deleteItem(index)}
-              ></i>
+              {data}
+              <div className='icon'>
+                <i
+                  className='fa-solid fa-pen-to-square'
+                  onClick={() => this.editItem(index)}
+                ></i>
+                <i
+                  className='fas fa-trash-alt'
+                  onClick={() => this.deleteItem(index)}
+                ></i>
+              </div>
             </li>
           ))}
         </ul>
@@ -58,5 +74,4 @@ export class TodoApp extends Component {
     );
   }
 }
-
 export default TodoApp;
